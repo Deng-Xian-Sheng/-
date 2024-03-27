@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人体参数模拟</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 在<head>中添加 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>人体参数模拟</h2>
+        <div class="slider-container">
+            <label for="dopamine">多巴胺:</label>
+            <input type="range" id="dopamine" min="0" max="100" value="50">
+            <span id="dopamine-value">50</span>
+        </div>
+        <div class="slider-container">
+            <label for="endorphin">内啡肽:</label>
+            <input type="range" id="endorphin" min="0" max="100" value="50">
+            <span id="endorphin-value">50</span>
+        </div>
+        <!-- 在<body>的<div class="container">中添加 -->
+        <div class="slider-container">
+            <label for="serotonin">5-羟色胺:</label>
+            <input type="range" id="serotonin" min="0" max="100" value="50">
+            <span id="serotonin-value">50</span>
+        </div>
+        <div class="slider-container">
+            <label for="oxytocin">催产素:</label>
+            <input type="range" id="oxytocin" min="0" max="100" value="50">
+            <span id="oxytocin-value">50</span>
+        </div>
+        <!-- 更多的参数 -->
+        <!-- 可以继续添加更多的滑块和参数 -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

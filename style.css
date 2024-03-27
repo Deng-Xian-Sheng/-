@@ -1,0 +1,96 @@
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: #FAFAD2;
+    /* 浅黄色背景 */
+    color: #333;
+}
+
+body {
+    animation: gradientBG 5s ease infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes gradientBG {
+    0% {
+        background: #FFB6C1;
+    }
+
+    50% {
+        background: #F0F8FF;
+    }
+
+    100% {
+        background: #FFB6C1;
+    }
+}
+
+.container {
+    background: #FFF0F5;
+    /* 淡粉色背景 */
+    border-radius: 15px;
+}
+
+.slider-container {
+    background-color: #F0FFFF;
+    /* 轻柔的蓝色 */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background-color: #FF69B4;
+    /* 强烈的粉色 */
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    /* 移除默认样式 */
+    width: 70%;
+    height: 8px;
+    border-radius: 5px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    /* 过渡效果 */
+    transition: opacity .2s;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* 移除默认样式 */
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #FF69B4;
+    cursor: pointer;
+    box-shadow: 0 0 2px #000;
+    /* 添加阴影 */
+    transition: background 0.2s ease-in-out;
+    /* 添加背景颜色变化的过渡效果 */
+}
+
+input[type=range]:hover::-webkit-slider-thumb {
+    background: #eb2f96;
+    /* 鼠标悬停时改变拖动块的颜色 */
+}
+
+h2 {
+    animation: float 3s ease-in-out infinite;
+    padding: 10px;
+    color: #333;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
